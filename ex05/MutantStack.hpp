@@ -8,7 +8,6 @@
 #if !defined (MUTANT_STACK_HPP_)
 	#define MUTANT_STACK_HPP_
 
-	#include <deque>
 	#include <stack>
 
 template <typename T>
