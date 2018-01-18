@@ -15,6 +15,10 @@ class MutantStack : public std::stack<T> {
 public:
 	class iterator : public std::deque<T>::iterator {
 	public:
+		iterator()
+		{
+		}
+
 		iterator(typename std::deque<T>::iterator const &it) :
 			std::deque<T>::iterator(it)
 		{
