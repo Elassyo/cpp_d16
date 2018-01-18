@@ -7,6 +7,19 @@
 
 #include "Ratatouille.hpp"
 
+Ratatouille::Ratatouille(Ratatouille const &other) :
+	_oss()
+{
+	this->_oss << other._oss.str();
+}
+
+Ratatouille &Ratatouille::operator=(Ratatouille const &other)
+{
+	this->_oss.str("");
+	this->_oss << other._oss.str();
+	return *this;
+}
+
 Ratatouille &Ratatouille::addVegetable(unsigned char c)
 {
 	this->_oss << c;

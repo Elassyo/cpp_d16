@@ -14,10 +14,10 @@
 class Ratatouille {
 public:
 	Ratatouille() = default;
-	Ratatouille(Ratatouille const &other) = default;
+	Ratatouille(Ratatouille const &other);
 	~Ratatouille() = default;
 
-	Ratatouille &operator=(Ratatouille const &other) = default;
+	Ratatouille &operator=(Ratatouille const &other);
 
 	Ratatouille &addVegetable(unsigned char c);
 	Ratatouille &addCondiment(unsigned int i);
